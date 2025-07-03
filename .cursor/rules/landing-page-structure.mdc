@@ -1,0 +1,56 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Company Landing Page Structure Guide
+
+## Project Overview
+This is a Next.js 15 project with TypeScript and Tailwind CSS for building a modern company landing page. The main entry point is [src/app/page.tsx](mdc:src/app/page.tsx), which uses the App Router structure.
+
+## File Structure
+- **Root**: [package.json](mdc:package.json) - Project dependencies and scripts
+- **App Router**: [src/app/layout.tsx](mdc:src/app/layout.tsx) - Root layout with global styles and metadata
+- **Main Page**: [src/app/page.tsx](mdc:src/app/page.tsx) - Landing page content with imported components
+- **Styles**: [src/app/globals.css](mdc:src/app/globals.css) - Global CSS and Tailwind imports
+- **Assets**: [public/](mdc:public) - Static assets (images, icons, etc.)
+
+## Component Organization
+Components are organized in `src/components/` with the following structure:
+- `src/components/sections/` - Page sections (HeroSection, GoalsSection, JoinSection)
+- `src/components/ui/` - Reusable UI components (Button, Card, Navigation)
+- `src/components/layout/` - Layout components (Header, Footer)
+
+## Current Landing Page Sections
+The CineLingo landing page includes:
+1. **Header** - Fixed navigation with logo and menu items
+2. **Hero Section** - Main headline "Bringing language learning to life" with CTAs
+3. **Goals Section** - Two numbered goals with descriptions and action links
+4. **Join Section** - Call-to-action for careers and company information
+5. **Footer** - Copyright and legal links
+
+## Design Inspiration
+The design is inspired by [Sesame's website](mdc:https:/www.sesame.com) with:
+- Clean, minimal aesthetic with generous white space
+- Large, bold typography (up to text-[10rem] for headlines)
+- Numbered goal sections with number and title on same line
+- Subtle color palette (grays and whites)
+- Smooth transitions and hover effects
+- Rounded buttons (rounded-full) with proper padding
+
+## Exact Sesame Design Patterns
+- **Hero Section**: `text-7xl md:text-8xl lg:text-9xl xl:text-[10rem]` for main headline
+- **Goals Layout**: Number and title on same line with `items-baseline`
+- **Spacing**: `py-40`, `mb-32`, `gap-16` for generous spacing
+- **Typography**: `font-light` for body text, `leading-[0.85]` for headlines
+- **Buttons**: `px-12 py-5 rounded-full` for consistent button styling
+- **Colors**: `text-gray-900`, `text-gray-600`, `text-gray-500` for text hierarchy
+
+## Best Practices
+- Use semantic HTML elements (`<section>`, `<article>`, `<header>`, `<footer>`)
+- Implement responsive design with Tailwind breakpoints
+- Ensure accessibility with proper ARIA labels and keyboard navigation
+- Use TypeScript interfaces for component props
+- Follow mobile-first responsive design principles
+- Maintain consistent spacing and typography
+- Use generous white space for modern, clean aesthetic
