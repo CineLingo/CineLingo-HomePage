@@ -1,24 +1,14 @@
-interface HeroSectionProps {
-  className?: string;
-}
-
-export default function HeroSection({ className = "" }: HeroSectionProps) {
+export default function HeroSection() {
   return (
-    <section id="home" className={`min-h-screen flex items-center justify-center pt-24 ${className}`}>
-      <div className="max-w-6xl mx-auto px-6 lg:px-8 text-center">
-        {/* Main Headline */}
-        <h1 className="text-7xl md:text-8xl lg:text-9xl xl:text-[10rem] font-bold text-black mb-16 leading-[0.85] tracking-tight">
-          Bringing language learning to life
+    <section className="min-h-screen flex items-center justify-center pt-20">
+      <div className="max-w-4xl mx-auto px-6 text-center">
+        <h1 className="text-4xl md:text-6xl font-bold text-black mb-12 leading-tight">
+          We don't just translate videos. <br /> We reconstruct them.
         </h1>
         
-        {/* Subheadline */}
-        <p className="text-xl md:text-2xl lg:text-3xl text-black mb-20 max-w-5xl mx-auto leading-relaxed font-light">
-          We believe in a future where learning languages is natural, engaging, and effective. 
-          Through AI-powered conversations and immersive experiences, we're making language 
-          acquisition as natural as watching your favorite movies.
+        <p className="text-xl md:text-2xl text-black max-w-3xl mx-auto leading-relaxed">
+          Every frame, every word, every voice — our AI transforms global content into fluent local experiences, breaking down language barriers in video.
         </p>
-
-        {/* No CTA buttons - just empty space like Sesame */}
       </div>
     </section>
   );

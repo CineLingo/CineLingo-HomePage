@@ -1,44 +1,29 @@
-interface JoinSectionProps {
-  className?: string;
-}
-
-export default function JoinSection({ className = "" }: JoinSectionProps) {
+export default function JoinSection() {
   return (
-    <section id="team" className={`py-40 bg-white ${className}`}>
-      <div className="max-w-6xl mx-auto px-6 lg:px-8 text-center">
-        {/* Main Content */}
-        <div className="mb-20">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-10 leading-tight">
-            Join CineLingo
-          </h2>
-          <p className="text-lg md:text-xl lg:text-2xl text-black mb-16 max-w-5xl mx-auto leading-relaxed font-light">
-            CineLingo is an interdisciplinary team focused on making language learning 
-            accessible, engaging, and effective for everyone. Learn more about our team 
-            and mission.
-          </p>
-        </div>
+    <section className="py-32 bg-gray-50">
+      <div className="max-w-4xl mx-auto px-6 text-center">
 
-        {/* CTA Button */}
-        <div className="mb-20">
-          <button className="bg-[#231942] text-white px-12 py-5 rounded-full text-lg font-medium hover:bg-[#5E548E] transition-colors duration-200">
-            Careers at CineLingo
+
+        {/* Join Us */}
+        <div className="mb-12">
+          <h2 className="text-4xl md:text-5xl font-bold text-black mb-8">
+            Join us
+          </h2>
+          
+          <p className="text-xl md:text-2xl text-black mb-12 max-w-3xl mx-auto leading-relaxed">
+            We're always looking for passionate researchers, engineers, creators, and designers.
+          </p>
+
+          <button className="bg-[#231942] text-white px-10 py-4 rounded-full text-lg font-medium hover:bg-[#5E548E] transition-colors mb-12">
+            Get in touch
           </button>
         </div>
 
-        {/* Footer Links */}
-        <div className="flex flex-wrap justify-center gap-10 text-base text-black">
-          <a href="#home" className="hover:text-[#5E548E] transition-colors duration-200">
-            Home
-          </a>
-          <a href="#research" className="hover:text-[#5E548E] transition-colors duration-200">
-            Research
-          </a>
-          <a href="#team" className="hover:text-[#5E548E] transition-colors duration-200">
-            Team
-          </a>
-          <a href="#contact" className="hover:text-[#5E548E] transition-colors duration-200">
-            Contact us
-          </a>
+        <div className="flex justify-center gap-8 text-base text-black">
+          <a href="/" className="hover:text-[#5E548E]">Home</a>
+          <a href="/research" className="hover:text-[#5E548E]">Research</a>
+          <a href="/team" className="hover:text-[#5E548E]">Team</a>
+          <a href="#" className="hover:text-[#5E548E]">Contact us</a>
         </div>
       </div>
     </section>

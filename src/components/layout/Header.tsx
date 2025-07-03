@@ -1,39 +1,25 @@
-interface HeaderProps {
-  className?: string;
-}
+import Link from "next/link";
 
-export default function Header({ className = "" }: HeaderProps) {
+export default function Header() {
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100 ${className}`}>
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
-          {/* Logo */}
-          <div className="flex items-center">
-            <h1 className="text-2xl font-semibold text-black">CineLingo</h1>
-          </div>
-
-          {/* Navigation - Only Research and Team like Sesame */}
-          <nav className="hidden md:flex space-x-12">
-            <a 
-              href="#research" 
-              className="text-black hover:text-[#5E548E] transition-colors duration-200 text-base font-medium"
-            >
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-100">
+      <div className="max-w-5xl mx-auto px-6">
+        <div className="flex justify-between items-center h-16">
+          <Link href="/" className="text-xl font-semibold text-black hover:text-[#5E548E] transition-colors">
+            CineLingo
+          </Link>
+          
+          <nav className="flex space-x-8">
+            <Link href="/" className="text-black hover:text-[#5E548E] text-sm transition-colors">
+              Home
+            </Link>
+            <Link href="/research" className="text-black hover:text-[#5E548E] text-sm transition-colors">
               Research
-            </a>
-            <a 
-              href="#team" 
-              className="text-black hover:text-[#5E548E] transition-colors duration-200 text-base font-medium"
-            >
+            </Link>
+            <Link href="/team" className="text-black hover:text-[#5E548E] text-sm transition-colors">
               Team
-            </a>
+            </Link>
           </nav>
-
-          {/* Mobile menu button */}
-          <button className="md:hidden p-2 rounded-md text-black hover:text-[#5E548E] hover:bg-gray-100 transition-colors duration-200">
-            <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-          </button>
         </div>
       </div>
     </header>
