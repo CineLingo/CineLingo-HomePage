@@ -2,11 +2,14 @@
   "name": "cinelingo-landing",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://jeongjaeseog.github.io/cinelingo-landing",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "next build && next export",
+    "deploy": "npm run build && touch out/.nojekyll"
   },
   "dependencies": {
     "react": "^19.0.0",

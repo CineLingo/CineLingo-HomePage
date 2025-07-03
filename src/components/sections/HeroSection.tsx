@@ -1,14 +1,50 @@
 export default function HeroSection() {
   return (
-    <section className="min-h-screen flex items-center justify-center pt-20">
-      <div className="max-w-4xl mx-auto px-6 text-center">
-        <h1 className="text-4xl md:text-6xl font-bold text-black mb-12 leading-tight">
-          We don't just translate videos. <br /> We reconstruct them.
-        </h1>
+    <section className="min-h-screen flex items-center justify-center pt-20 gradient-bg relative overflow-hidden">
+      {/* Background decorative elements */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-[#5E548E]/10 to-[#9F86C0]/10 rounded-full blur-3xl animate-float"></div>
+        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-tr from-[#BE95C4]/10 to-[#E0B1CB]/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '1.5s' }}></div>
+      </div>
+      
+      <div className="max-w-5xl mx-auto px-6 text-center relative z-10">
+        <div className="animate-fade-in-up">
+          <h1 className="text-5xl md:text-7xl font-bold text-black mb-12 leading-tight tracking-tight">
+            We don&apos;t just translate videos.
+            <br />
+            <span className="gradient-text">We reconstruct them.</span>
+          </h1>
+        </div>
         
-        <p className="text-xl md:text-2xl text-black max-w-3xl mx-auto leading-relaxed">
-          Every frame, every word, every voice — our AI transforms global content into fluent local experiences, breaking down language barriers in video.
-        </p>
+        <div className="animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+          <p className="text-xl md:text-2xl text-gray-700 max-w-4xl mx-auto leading-relaxed font-light">
+            Every frame, every word, every voice — our AI transforms global content into fluent local experiences, breaking down language barriers in video.
+          </p>
+        </div>
+        
+        <div className="animate-fade-in-up mt-12" style={{ animationDelay: '0.4s' }}>
+          <div className="flex justify-center items-center gap-8 text-sm text-gray-500">
+            <div className="flex items-center gap-2 hover-glow px-3 py-2 rounded-lg">
+              <div className="w-2 h-2 bg-[#5E548E] rounded-full animate-pulse-slow"></div>
+              <span>Lip-sync AI</span>
+            </div>
+            <div className="flex items-center gap-2 hover-glow px-3 py-2 rounded-lg">
+              <div className="w-2 h-2 bg-[#9F86C0] rounded-full animate-pulse-slow" style={{ animationDelay: '0.5s' }}></div>
+              <span>Voice Synthesis</span>
+            </div>
+            <div className="flex items-center gap-2 hover-glow px-3 py-2 rounded-lg">
+              <div className="w-2 h-2 bg-[#BE95C4] rounded-full animate-pulse-slow" style={{ animationDelay: '1s' }}></div>
+              <span>Visual Translation</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      {/* Scroll indicator */}
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <div className="w-6 h-10 border-2 border-gray-400 rounded-full flex justify-center">
+          <div className="w-1 h-3 bg-gray-400 rounded-full mt-2 animate-pulse-slow"></div>
+        </div>
       </div>
     </section>
   );
