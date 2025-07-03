@@ -16,25 +16,25 @@ function GoalItem({ number, title, description, subtitle, actionText, actionLink
           <div className="text-8xl md:text-9xl lg:text-[10rem] font-bold text-gray-200 leading-none">
             {number}
           </div>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-black leading-tight">
             {title}
           </h2>
         </div>
         
         {/* Content */}
         <div className="flex-1 pt-6">
-          <p className="text-lg md:text-xl lg:text-2xl text-gray-600 mb-8 leading-relaxed font-light">
+          <p className="text-lg md:text-xl lg:text-2xl text-black mb-8 leading-relaxed font-light">
             {description}
           </p>
           {subtitle && (
-            <p className="text-base md:text-lg text-gray-500 mb-8 leading-relaxed font-light">
+            <p className="text-base md:text-lg text-[#5E548E] mb-8 leading-relaxed font-light">
               {subtitle}
             </p>
           )}
           {actionText && actionLink && (
             <a 
               href={actionLink}
-              className="inline-block text-blue-600 hover:text-blue-800 font-medium text-lg transition-colors duration-200"
+              className="inline-block text-[#5E548E] hover:text-[#231942] font-medium text-lg transition-colors duration-200"
             >
               {actionText} →
             </a>
@@ -51,11 +51,11 @@ interface GoalsSectionProps {
 
 export default function GoalsSection({ className = "" }: GoalsSectionProps) {
   return (
-    <section id="research" className={`py-40 bg-gray-50 ${className}`}>
+    <section id="research" className={`py-40 bg-white ${className}`}>
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-32">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-8 leading-tight">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-8 leading-tight">
             To start, we have two goals
           </h2>
         </div>
@@ -75,8 +75,6 @@ export default function GoalsSection({ className = "" }: GoalsSectionProps) {
             title="Immersive learning experiences"
             description="Interactive scenarios and real-world conversations that make language learning engaging and practical, breaking down the barriers between classroom and real life."
             subtitle="Crossing the uncanny valley of conversational language learning"
-            actionText="Explore our approach"
-            actionLink="#approach"
           />
         </div>
       </div>
