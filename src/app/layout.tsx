@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { LanguageProvider } from "@/contexts/LanguageContext";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -13,19 +14,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "CineLingo - Bringing language learning to life",
-  description: "We believe in a future where learning languages is natural, engaging, and effective. Through AI-powered conversations and immersive experiences, we're making language acquisition as natural as watching your favorite movies.",
+  title: "CineLingo - AI-Powered Video Localization",
+  description: "We don't just translate videos. We reconstruct them. Every frame, every word, every voice — our AI transforms global content into fluent local experiences.",
   keywords: "language learning, AI, education, technology, CineLingo, language companion",
   openGraph: {
-    title: "CineLingo - Bringing language learning to life",
-    description: "AI-powered language learning that makes acquisition natural and engaging",
+    title: "CineLingo - AI-Powered Video Localization",
+    description: "We don't just translate videos. We reconstruct them. Every frame, every word, every voice — our AI transforms global content into fluent local experiences.",
     type: "website",
-    locale: "en_US",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "CineLingo - Bringing language learning to life",
-    description: "AI-powered language learning that makes acquisition natural and engaging",
   },
 };
 
@@ -38,8 +33,11 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        suppressHydrationWarning={true}
       >
-        {children}
+        <LanguageProvider>
+          {children}
+        </LanguageProvider>
       </body>
     </html>
   );

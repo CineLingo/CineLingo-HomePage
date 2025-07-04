@@ -1,30 +1,34 @@
+"use client";
+
+import { useLanguage } from '@/contexts/LanguageContext';
 import Link from "next/link";
 
 export default function JoinSection() {
-  return (
-    <section className="py-32 bg-gray-50">
-      <div className="max-w-4xl mx-auto px-6 text-center">
-        <h2 className="text-4xl md:text-5xl font-bold text-black mb-8">
-          Join us
-        </h2>
-        
-        <p className="text-xl md:text-2xl text-black mb-12 max-w-3xl mx-auto leading-relaxed">
-          We&apos;re always looking for passionate researchers, engineers, creators, and designers.
-        </p>
+  const { t } = useLanguage();
 
-        <a 
-          href="mailto:mingikwon@cinelingo-labs.com?subject=Interested in joining CineLingo&body=Hi,%0D%0A%0D%0AI'm interested in joining CineLingo and would like to learn more about opportunities.%0D%0A%0D%0ABest regards"
-          className="inline-block bg-[#231942] text-white px-10 py-4 rounded-full text-lg font-medium hover:bg-[#5E548E] transition-colors mb-12"
+  const handleContact = () => {
+    const subject = encodeURIComponent("CineLingo Collaboration Inquiry");
+    const body = encodeURIComponent(
+      "Hello,\n\nI'm interested in learning more about CineLingo and potential collaboration opportunities.\n\nBest regards,"
+    );
+    window.location.href = `mailto:mingikwon@cinelingo-labs.com?subject=${subject}&body=${body}`;
+  };
+
+  return (
+    <section className="py-24 bg-white">
+      <div className="max-w-4xl mx-auto px-6 text-center">
+        <h2 className="text-4xl md:text-5xl font-bold text-black mb-6">
+          {t('join.title')}
+        </h2>
+        <p className="text-xl text-gray-600 mb-12 max-w-2xl mx-auto leading-relaxed">
+          {t('join.subtitle')}
+        </p>
+        <button
+          onClick={handleContact}
+          className="bg-[#5E548E] text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-[#4A3F7A] transition-colors duration-300 hover:scale-105 transform"
         >
-          Get in touch
-        </a>
-        
-        <div className="flex justify-center gap-8 text-base text-black">
-          <Link href="/" className="hover:text-[#5E548E]">Home</Link>
-          <Link href="/research" className="hover:text-[#5E548E]">Research</Link>
-          <Link href="/team" className="hover:text-[#5E548E]">Team</Link>
-          <a href="mailto:mingikwon@cinelingo-labs.com" className="hover:text-[#5E548E]">Contact us</a>
-        </div>
+          {t('join.button')}
+        </button>
       </div>
     </section>
   );

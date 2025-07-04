@@ -1,4 +1,10 @@
+"use client";
+
+import { useLanguage } from '@/contexts/LanguageContext';
+
 export default function HeroSection() {
+  const { t } = useLanguage();
+
   return (
     <section className="min-h-screen flex items-center justify-center pt-20 gradient-bg relative overflow-hidden">
       {/* Background decorative elements */}
@@ -10,15 +16,15 @@ export default function HeroSection() {
       <div className="max-w-5xl mx-auto px-6 text-center relative z-10">
         <div className="animate-fade-in-up">
           <h1 className="text-5xl md:text-7xl font-bold text-black mb-12 leading-tight tracking-tight">
-            We don&apos;t just translate videos.
+            {t('hero.title.line1')}
             <br />
-            <span className="gradient-text">We reconstruct them.</span>
+            <span className="gradient-text">{t('hero.title.line2')}</span>
           </h1>
         </div>
         
         <div className="animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
           <p className="text-xl md:text-2xl text-gray-700 max-w-4xl mx-auto leading-relaxed font-light">
-            Every frame, every word, every voice — our AI transforms global content into fluent local experiences, breaking down language barriers in video.
+            {t('hero.subtitle')}
           </p>
         </div>
         
@@ -26,15 +32,15 @@ export default function HeroSection() {
           <div className="flex justify-center items-center gap-8 text-sm text-gray-500">
             <div className="flex items-center gap-2 hover-glow px-3 py-2 rounded-lg">
               <div className="w-2 h-2 bg-[#5E548E] rounded-full animate-pulse-slow"></div>
-              <span>Lip-sync AI</span>
+              <span>{t('hero.tech.lipSync')}</span>
             </div>
             <div className="flex items-center gap-2 hover-glow px-3 py-2 rounded-lg">
               <div className="w-2 h-2 bg-[#9F86C0] rounded-full animate-pulse-slow" style={{ animationDelay: '0.5s' }}></div>
-              <span>Voice Synthesis</span>
+              <span>{t('hero.tech.voice')}</span>
             </div>
             <div className="flex items-center gap-2 hover-glow px-3 py-2 rounded-lg">
               <div className="w-2 h-2 bg-[#BE95C4] rounded-full animate-pulse-slow" style={{ animationDelay: '1s' }}></div>
-              <span>Visual Translation</span>
+              <span>{t('hero.tech.visual')}</span>
             </div>
           </div>
         </div>
