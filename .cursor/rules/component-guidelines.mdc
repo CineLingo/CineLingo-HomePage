@@ -3,3 +3,88 @@ description:
 globs:
 alwaysApply: false
 ---
+# Component Development Guidelines
+
+## Component Structure
+All components follow this structure:
+```typescript
+interface ComponentProps {
+  className?: string; // Optional styling override
+}
+
+export default function ComponentName({ className = "" }: ComponentProps) {
+  return (
+    <section className={`base-classes ${className}`}>
+      {/* Component content */}
+    </section>
+  );
+}
+```
+
+## Tailwind CSS Guidelines
+- Use consistent spacing: `p-4`, `p-6`, `p-8` for padding; `m-4`, `m-6`, `m-8` for margins
+- Responsive breakpoints: `sm:`, `md:`, `lg:`, `xl:` for different screen sizes
+- Color scheme: Use semantic colors (gray-50, gray-100, gray-600, gray-900)
+- Typography: Use `text-sm`, `text-base`, `text-lg`, `text-xl`, `text-2xl`, `text-3xl`, `text-4xl`, `text-5xl`, `text-6xl`, `text-7xl`, `text-8xl` for consistent sizing
+- Layout: Use `flex`, `grid`, `container`, `max-w-*` for responsive layouts
+
+## Current Component Patterns
+
+### Header Component
+```typescript
+interface HeaderProps {
+  className?: string;
+}
+// Fixed header with navigation and mobile menu
+```
+
+### Hero Section Component
+```typescript
+interface HeroSectionProps {
+  className?: string;
+}
+// Full-screen hero with large headline and CTAs
+```
+
+### Goals Section Component
+```typescript
+interface GoalItemProps {
+  number: string;
+  title: string;
+  description: string;
+  actionText?: string;
+  actionLink?: string;
+}
+// Numbered goals with large typography and action links
+```
+
+### Join Section Component
+```typescript
+interface JoinSectionProps {
+  className?: string;
+}
+// Call-to-action section with company information
+```
+
+## Design System
+- **Colors**: Gray palette (gray-50, gray-100, gray-200, gray-600, gray-900)
+- **Typography**: Geist Sans font family
+- **Spacing**: Consistent 4, 6, 8, 12, 16, 20 unit spacing
+- **Borders**: Subtle gray borders (border-gray-100, border-gray-200)
+- **Shadows**: Minimal shadows for depth
+- **Transitions**: Smooth 200ms transitions for interactions
+
+## Accessibility Guidelines
+- Use semantic HTML elements
+- Add `aria-label` for interactive elements without visible text
+- Ensure proper heading hierarchy (h1 → h2 → h3)
+- Make all interactive elements keyboard accessible
+- Use `focus:outline-none focus:ring-2 focus:ring-primary` for focus states
+- Add `alt` text to all images
+
+## Performance Guidelines
+- Use Next.js Image component for optimized images
+- Implement lazy loading for below-the-fold content
+- Use `useMemo` and `useCallback` for expensive computations
+- Avoid inline styles, use Tailwind classes instead
+- Keep components small and focused on single responsibility

@@ -87,9 +87,7 @@ export default function TechSection() {
             <blockquote className="text-xl md:text-2xl text-black italic leading-relaxed">
               &ldquo;{t('tech.quote')}&rdquo;
             </blockquote>
-            <p className="mt-4 text-lg text-gray-600 font-medium">
-              {t('tech.quote.author')}
-            </p>
+
           </div>
         </div>
       </div>

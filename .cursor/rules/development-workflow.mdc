@@ -3,3 +3,62 @@ description:
 globs:
 alwaysApply: false
 ---
+# Development Workflow Guidelines
+
+## Project Setup
+This project uses Next.js 15 with TypeScript and Tailwind CSS. Key configuration files:
+- [package.json](mdc:package.json) - Dependencies and scripts
+- [tsconfig.json](mdc:tsconfig.json) - TypeScript configuration
+- [next.config.ts](mdc:next.config.ts) - Next.js configuration
+- [eslint.config.mjs](mdc:eslint.config.mjs) - ESLint configuration
+
+## Development Commands
+```bash
+npm run dev      # Start development server
+npm run build    # Build for production
+npm run start    # Start production server
+npm run lint     # Run ESLint
+```
+
+## File Naming Conventions
+- Components: PascalCase (e.g., `HeroSection.tsx`)
+- Pages: kebab-case (e.g., `about-us.tsx`)
+- Utilities: camelCase (e.g., `formatDate.ts`)
+- Constants: UPPER_SNAKE_CASE (e.g., `API_ENDPOINTS.ts`)
+
+## Component Development Process
+1. Create component file in appropriate directory
+2. Define TypeScript interface for props
+3. Implement component with semantic HTML
+4. Add Tailwind classes for styling
+5. Test responsiveness across breakpoints
+6. Ensure accessibility compliance
+7. Add to main page or layout
+
+## Code Quality Standards
+- Use TypeScript for all components and functions
+- Follow ESLint rules defined in [eslint.config.mjs](mdc:eslint.config.mjs)
+- Use Prettier for code formatting
+- Write meaningful commit messages
+- Test components across different screen sizes
+
+## Asset Management
+- Store images in [public/](mdc:public/) directory
+- Use Next.js Image component for optimization
+- Optimize images for web (compress, resize)
+- Use SVG icons when possible for scalability
+- Organize assets in subdirectories (images/, icons/, etc.)
+
+## Performance Optimization
+- Use Next.js Image component for automatic optimization
+- Implement lazy loading for below-the-fold content
+- Minimize bundle size by importing only needed dependencies
+- Use dynamic imports for large components
+- Optimize fonts using Next.js font optimization
+
+## Testing Strategy
+- Test responsive design on multiple devices
+- Verify accessibility with screen readers
+- Test form submissions and interactions
+- Validate cross-browser compatibility
+- Check loading performance with Lighthouse

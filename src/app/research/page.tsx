@@ -95,7 +95,7 @@ export default function ResearchPage() {
                 </h3>
                 <div className="relative w-full aspect-[16/9] bg-gray-50 rounded-xl overflow-hidden border border-gray-200 hover-lift">
                   <img
-                    src="/jamflow_archi.png"
+                    src={process.env.NODE_ENV === 'production' ? '/cinelingo-landing/jamflow_archi.png' : '/jamflow_archi.png'}
                     alt="JAM-Flow Architecture Diagram"
                     className="w-full h-full object-contain"
                   />
@@ -160,7 +160,7 @@ export default function ResearchPage() {
                 </h3>
                 <div className="relative w-full aspect-[16/9] bg-gray-50 rounded-xl overflow-hidden border border-gray-200 hover-lift">
                   <img
-                    src="/ttsctrlnet_archi.png"
+                    src={process.env.NODE_ENV === 'production' ? '/cinelingo-landing/ttsctrlnet_archi.png' : '/ttsctrlnet_archi.png'}
                     alt="TTS-CtrlNet Architecture Diagram"
                     className="w-full h-full object-contain"
                   />

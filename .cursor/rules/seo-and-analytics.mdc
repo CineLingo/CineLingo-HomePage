@@ -3,3 +3,71 @@ description:
 globs:
 alwaysApply: false
 ---
+# SEO and Analytics Guidelines
+
+## SEO Best Practices
+Implement SEO optimization for better search engine visibility and user experience.
+
+## Meta Tags and Metadata
+Use Next.js metadata API in [src/app/layout.tsx](mdc:src/app/layout.tsx):
+```typescript
+export const metadata = {
+  title: 'Company Name - Main Value Proposition',
+  description: 'Clear, compelling description of what the company does (150-160 characters)',
+  keywords: 'relevant, keywords, for, your, industry',
+  openGraph: {
+    title: 'Company Name - Main Value Proposition',
+    description: 'Description for social media sharing',
+    images: ['/og-image.jpg'],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Company Name - Main Value Proposition',
+    description: 'Description for Twitter sharing',
+    images: ['/twitter-image.jpg'],
+  },
+}
+```
+
+## Page Structure for SEO
+- Use semantic HTML elements (`<header>`, `<main>`, `<section>`, `<footer>`)
+- Implement proper heading hierarchy (H1 → H2 → H3)
+- Include relevant keywords naturally in content
+- Add alt text to all images
+- Use descriptive URLs for pages
+
+## Content Optimization
+- Write compelling, keyword-rich content
+- Include relevant keywords in headings and subheadings
+- Use internal linking to connect related content
+- Optimize images with descriptive filenames and alt text
+- Include schema markup for structured data
+
+## Technical SEO
+- Ensure fast loading times (optimize images, minimize CSS/JS)
+- Make the site mobile-friendly (responsive design)
+- Implement proper URL structure
+- Add XML sitemap
+- Configure robots.txt file
+- Use canonical URLs to prevent duplicate content
+
+## Analytics Implementation
+Consider implementing analytics tools:
+- Google Analytics 4 for user behavior tracking
+- Google Search Console for SEO monitoring
+- Hotjar or similar for user experience insights
+- Conversion tracking for form submissions and CTAs
+
+## Performance Monitoring
+- Use Lighthouse for performance audits
+- Monitor Core Web Vitals (LCP, FID, CLS)
+- Track page load times
+- Monitor mobile performance
+- Regular SEO audits and updates
+
+## Local SEO (if applicable)
+- Include business address and contact information
+- Add Google My Business integration
+- Include local keywords in content
+- Add location-specific landing pages
+- Implement local schema markup
