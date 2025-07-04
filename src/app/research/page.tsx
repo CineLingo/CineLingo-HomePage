@@ -1,6 +1,5 @@
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
-import Image from "next/image";
 
 export default function ResearchPage() {
   return (
@@ -82,11 +81,10 @@ export default function ResearchPage() {
                   Architecture
                 </h3>
                 <div className="relative w-full aspect-[16/9] bg-gray-50 rounded-xl overflow-hidden border border-gray-200 hover-lift">
-                  <Image
+                  <img
                     src="/jamflow_archi.png"
                     alt="JAM-Flow Architecture Diagram"
-                    fill
-                    className="object-contain"
+                    className="w-full h-full object-contain"
                   />
                 </div>
                 <p className="mt-6 text-lg text-gray-600 italic bg-white p-4 rounded-lg border border-gray-200">
@@ -148,11 +146,10 @@ export default function ResearchPage() {
                   Architecture
                 </h3>
                 <div className="relative w-full aspect-[16/9] bg-gray-50 rounded-xl overflow-hidden border border-gray-200 hover-lift">
-                  <Image
+                  <img
                     src="/ttsctrlnet_archi.png"
                     alt="TTS-CtrlNet Architecture Diagram"
-                    fill
-                    className="object-contain"
+                    className="w-full h-full object-contain"
                   />
                 </div>
                 <p className="mt-6 text-lg text-gray-600 italic bg-white p-4 rounded-lg border border-gray-200">
@@ -252,8 +249,11 @@ export default function ResearchPage() {
               </p>
               <div className="flex items-center justify-center gap-4">
                 <div className="w-3 h-3 bg-[#5E548E] rounded-full animate-pulse-slow"></div>
-                <a href="#" className="text-xl md:text-2xl gradient-text font-semibold hover-glow px-6 py-3 rounded-lg transition-all duration-300">
-                  Check our open roles →
+                <a 
+                  href="mailto:mingikwon@cinelingo-labs.com?subject=Interested in CineLingo Research Opportunities&body=Hi,%0D%0A%0D%0AI'm interested in research opportunities at CineLingo and would like to learn more.%0D%0A%0D%0ABest regards"
+                  className="text-xl md:text-2xl gradient-text font-semibold hover-glow px-6 py-3 rounded-lg transition-all duration-300"
+                >
+                  Get in touch
                 </a>
               </div>
             </div>

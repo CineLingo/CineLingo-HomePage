@@ -24,30 +24,152 @@ export default function TeamPage() {
               </p>
             </div>
 
-            {/* Leadership */}
+            {/* Team Photos Slider */}
             <div className="mb-16">
-              <h2 className="text-2xl md:text-3xl font-bold text-black mb-8">Leadership</h2>
-              <div className="grid md:grid-cols-2 gap-8">
-                <div className="text-center">
-                  <div className="w-48 h-48 mx-auto mb-6 bg-gray-200 rounded-full flex items-center justify-center">
-                    <span className="text-gray-500 text-lg">Photo</span>
+              <h2 className="text-2xl md:text-3xl font-bold text-black mb-8 text-center">Our Team</h2>
+              <div className="overflow-hidden">
+                <div className="flex animate-slide gap-8 items-center">
+                  {/* First set of photos */}
+                  <div className="w-80 h-60 relative flex-shrink-0">
+                    <img
+                      src="/photo0.jpg"
+                      alt="Team Photo 1"
+                      className="w-full h-full object-cover rounded-lg shadow-lg hover-lift"
+                    />
                   </div>
-                  <h3 className="text-xl font-bold text-black mb-2">Mingi Kwon</h3>
-                  <p className="text-lg text-gray-600 mb-2">Co-founder & CEO</p>
-                  <p className="text-sm text-gray-500">Machine Learning • Product Strategy</p>
+                  <div className="w-80 h-60 relative flex-shrink-0">
+                    <img
+                      src="/photo1.png"
+                      alt="Team Photo 2"
+                      className="w-full h-full object-cover rounded-lg shadow-lg hover-lift"
+                    />
+                  </div>
+                  <div className="w-80 h-60 relative flex-shrink-0">
+                    <img
+                      src="/photo2.jpg"
+                      alt="Team Photo 3"
+                      className="w-full h-full object-cover rounded-lg shadow-lg hover-lift"
+                    />
+                  </div>
+                  <div className="w-80 h-60 relative flex-shrink-0">
+                    <img
+                      src="/photo3.png"
+                      alt="Team Photo 4"
+                      className="w-full h-full object-cover rounded-lg shadow-lg hover-lift"
+                    />
+                  </div>
+                  <div className="w-80 h-60 relative flex-shrink-0">
+                    <img
+                      src="/photo4.png"
+                      alt="Team Photo 5"
+                      className="w-full h-full object-cover rounded-lg shadow-lg hover-lift"
+                    />
+                  </div>
+                  <div className="w-80 h-60 relative flex-shrink-0">
+                    <img
+                      src="/photo5.png"
+                      alt="Team Photo 6"
+                      className="w-full h-full object-cover rounded-lg shadow-lg hover-lift"
+                    />
+                  </div>
+                  <div className="w-80 h-60 relative flex-shrink-0">
+                    <img
+                      src="/photo0.jpg"
+                      alt="Team Photo 7"
+                      className="w-full h-full object-cover rounded-lg shadow-lg hover-lift"
+                    />
+                  </div>
+                  <div className="w-80 h-60 relative flex-shrink-0">
+                    <img
+                      src="/photo1.png"
+                      alt="Team Photo 8"
+                      className="w-full h-full object-cover rounded-lg shadow-lg hover-lift"
+                    />
+                  </div>
+                  <div className="w-80 h-60 relative flex-shrink-0">
+                    <img
+                      src="/photo2.jpg"
+                      alt="Team Photo 9"
+                      className="w-full h-full object-cover rounded-lg shadow-lg hover-lift"
+                    />
+                  </div>
+                  <div className="w-80 h-60 relative flex-shrink-0">
+                    <img
+                      src="/photo3.png"
+                      alt="Team Photo 10"
+                      className="w-full h-full object-cover rounded-lg shadow-lg hover-lift"
+                    />
+                  </div>
+                  <div className="w-80 h-60 relative flex-shrink-0">
+                    <img
+                      src="/photo4.png"
+                      alt="Team Photo 11"
+                      className="w-full h-full object-cover rounded-lg shadow-lg hover-lift"
+                    />
+                  </div>
+                  <div className="w-80 h-60 relative flex-shrink-0">
+                    <img
+                      src="/photo5.png"
+                      alt="Team Photo 12"
+                      className="w-full h-full object-cover rounded-lg shadow-lg hover-lift"
+                    />
+                  </div>
+                  
+                  {/* Duplicate set for seamless loop */}
+                  <div className="w-80 h-60 relative flex-shrink-0">
+                    <img
+                      src="/photo0.jpg"
+                      alt="Team Photo 13"
+                      className="w-full h-full object-cover rounded-lg shadow-lg hover-lift"
+                    />
+                  </div>
+                  <div className="w-80 h-60 relative flex-shrink-0">
+                    <img
+                      src="/photo1.png"
+                      alt="Team Photo 14"
+                      className="w-full h-full object-cover rounded-lg shadow-lg hover-lift"
+                    />
+                  </div>
+                  <div className="w-80 h-60 relative flex-shrink-0">
+                    <img
+                      src="/photo2.jpg"
+                      alt="Team Photo 15"
+                      className="w-full h-full object-cover rounded-lg shadow-lg hover-lift"
+                    />
+                  </div>
+                  <div className="w-80 h-60 relative flex-shrink-0">
+                    <img
+                      src="/photo3.png"
+                      alt="Team Photo 16"
+                      className="w-full h-full object-cover rounded-lg shadow-lg hover-lift"
+                    />
+                  </div>
+                  <div className="w-80 h-60 relative flex-shrink-0">
+                    <img
+                      src="/photo4.png"
+                      alt="Team Photo 17"
+                      className="w-full h-full object-cover rounded-lg shadow-lg hover-lift"
+                    />
+                  </div>
+                  <div className="w-80 h-60 relative flex-shrink-0">
+                    <img
+                      src="/photo5.png"
+                      alt="Team Photo 18"
+                      className="w-full h-full object-cover rounded-lg shadow-lg hover-lift"
+                    />
+                  </div>
                 </div>
-                
-                <div className="text-center">
-                  <div className="w-48 h-48 mx-auto mb-6 bg-gray-200 rounded-full flex items-center justify-center">
-                    <span className="text-gray-500 text-lg">Photo</span>
-                  </div>
-                  <h3 className="text-xl font-bold text-black mb-2">Jaeseok Jeong</h3>
-                  <p className="text-lg text-gray-600 mb-2">Co-founder & CTO</p>
-                  <p className="text-sm text-gray-500">Software Engineering • AI Research</p>
+              </div>
+              
+              {/* Photo counter */}
+              <div className="text-center mt-8">
+                <div className="inline-flex items-center gap-4 text-gray-600">
+                  <div className="w-2 h-2 bg-[#5E548E] rounded-full animate-pulse-slow"></div>
+                  <span className="text-lg">Scroll to see more team photos</span>
+                  <div className="w-2 h-2 bg-[#5E548E] rounded-full animate-pulse-slow" style={{ animationDelay: '0.5s' }}></div>
                 </div>
               </div>
             </div>
-
 
             {/* Company Info */}
             <div className="mb-16">
@@ -63,16 +185,12 @@ export default function TeamPage() {
                   <div>
                     <h3 className="text-xl font-bold text-black mb-4">Email</h3>
                     <p className="text-lg text-gray-600 leading-relaxed">
-                      mingikwon@cinelingolabs.com
+                      mingikwon@cinelingo-labs.com
                     </p>
                   </div>
                 </div>
               </div>
             </div>
-
-
-
-
           </div>
         </section>
       </main>

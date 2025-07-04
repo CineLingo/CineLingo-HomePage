@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function CollaborationsSection() {
   return (
     <section className="py-32 bg-gray-50">
@@ -18,103 +16,91 @@ export default function CollaborationsSection() {
             <div className="flex animate-slide gap-16 items-center">
               {/* Original Logos */}
               <div className="w-40 h-20 relative flex-shrink-0">
-                <Image
+                <img
                   src="/veritasium_logo.jpg"
                   alt="Veritasium"
-                  fill
-                  className="object-contain"
+                  className="w-full h-full object-contain"
                 />
               </div>
               <div className="w-40 h-20 relative flex-shrink-0">
-                <Image
+                <img
                   src="/3blue1brown_logo.jpg"
                   alt="3Blue1Brown"
-                  fill
-                  className="object-contain"
+                  className="w-full h-full object-contain"
                 />
               </div>
               <div className="w-40 h-20 relative flex-shrink-0">
-                <Image
+                <img
                   src="/welchlabs_logo.jpeg"
                   alt="Welch Labs"
-                  fill
-                  className="object-contain"
+                  className="w-full h-full object-contain"
                 />
               </div>
               <div className="w-40 h-20 relative flex-shrink-0">
-                <Image
+                <img
                   src="/doctorfriends_logo.jpg"
                   alt="Doctorfriends"
-                  fill
-                  className="object-contain"
+                  className="w-full h-full object-contain"
                 />
               </div>
               
               {/* Korean Logos */}
               <div className="w-40 h-20 relative flex-shrink-0">
-                <Image
+                <img
                   src="/veritasium_ko_logo.jpg"
                   alt="Veritasium Korea"
-                  fill
-                  className="object-contain"
+                  className="w-full h-full object-contain"
                 />
               </div>
               <div className="w-40 h-20 relative flex-shrink-0">
-                <Image
+                <img
                   src="/3blue1brown_ko_logo.jpg"
                   alt="3Blue1Brown Korea"
-                  fill
-                  className="object-contain"
+                  className="w-full h-full object-contain"
                 />
               </div>
               <div className="w-40 h-20 relative flex-shrink-0">
-                <Image
+                <img
                   src="/welchlabs_korea_logo.png"
                   alt="Welch Labs Korea"
-                  fill
-                  className="object-contain"
+                  className="w-full h-full object-contain"
                 />
               </div>
               <div className="w-40 h-20 relative flex-shrink-0">
-                <Image
+                <img
                   src="/doctorfriends_logo.jpg"
                   alt="Doctorfriends"
-                  fill
-                  className="object-contain"
+                  className="w-full h-full object-contain"
                 />
               </div>
               
               {/* Duplicate for seamless loop */}
               <div className="w-40 h-20 relative flex-shrink-0">
-                <Image
+                <img
                   src="/veritasium_logo.jpg"
                   alt="Veritasium"
-                  fill
-                  className="object-contain"
+                  className="w-full h-full object-contain"
                 />
               </div>
               <div className="w-40 h-20 relative flex-shrink-0">
-                <Image
+                <img
                   src="/3blue1brown_logo.jpg"
                   alt="3Blue1Brown"
-                  fill
-                  className="object-contain"
+                  className="w-full h-full object-contain"
                 />
               </div>
               <div className="w-40 h-20 relative flex-shrink-0">
-                <Image
+                <img
                   src="/welchlabs_logo.jpeg"
                   alt="Welch Labs"
-                  fill
-                  className="object-contain"
+                  className="w-full h-full object-contain"
                 />
               </div>
               <div className="w-40 h-20 relative flex-shrink-0">
-                <Image
+                <img
                   src="/doctorfriends_logo.jpg"
                   alt="Doctorfriends"
-                  fill
-                  className="object-contain"
+                  className="w-full h-full object-contain"
                 />
               </div>
             </div>

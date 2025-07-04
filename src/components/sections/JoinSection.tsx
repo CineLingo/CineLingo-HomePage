@@ -12,15 +12,18 @@ export default function JoinSection() {
           We&apos;re always looking for passionate researchers, engineers, creators, and designers.
         </p>
 
-        <button className="bg-[#231942] text-white px-10 py-4 rounded-full text-lg font-medium hover:bg-[#5E548E] transition-colors mb-12">
+        <a 
+          href="mailto:mingikwon@cinelingo-labs.com?subject=Interested in joining CineLingo&body=Hi,%0D%0A%0D%0AI'm interested in joining CineLingo and would like to learn more about opportunities.%0D%0A%0D%0ABest regards"
+          className="inline-block bg-[#231942] text-white px-10 py-4 rounded-full text-lg font-medium hover:bg-[#5E548E] transition-colors mb-12"
+        >
           Get in touch
-        </button>
+        </a>
         
         <div className="flex justify-center gap-8 text-base text-black">
           <Link href="/" className="hover:text-[#5E548E]">Home</Link>
           <Link href="/research" className="hover:text-[#5E548E]">Research</Link>
           <Link href="/team" className="hover:text-[#5E548E]">Team</Link>
-          <Link href="#" className="hover:text-[#5E548E]">Contact us</Link>
+          <a href="mailto:mingikwon@cinelingo-labs.com" className="hover:text-[#5E548E]">Contact us</a>
         </div>
       </div>
     </section>
