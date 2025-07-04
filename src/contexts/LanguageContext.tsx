@@ -101,7 +101,11 @@ const translations = {
 
     // Team Page
     'team.title': "Meet Our Team",
-    'team.description': "CineLingo is led by Mingi Kwon, Jaeseok Jeong, and a team of creative individuals with a shared passion. We are backed by Youngjung Uh at Yonsei University, Yongjae Lee at UW-Madison and a collection of founders and investors.",
+    'team.description.prefix': "CineLingo is led by ",
+    'team.description.mingi': "Mingi Kwon",
+    'team.description.middle': ", ",
+    'team.description.jaeseok': "Jaeseok Jeong",
+    'team.description.suffix': ", and a team of creative individuals with a shared passion. We are backed by Youngjung Uh at Yonsei University, Yongjae Lee at UW-Madison and a collection of founders and investors.",
     'team.location': "We have offices in Seoul, Korea. Our team members have long-tenured careers in machine learning, software, and entertainment.",
     'team.belief': "We strongly believe that a small, focused team with a clear vision can build great things.",
     'team.photos.title': "Our Team",
@@ -197,7 +201,11 @@ const translations = {
 
     // Team Page
     'team.title': "우리 팀을 만나보세요",
-    'team.description': "CineLingo는 권민기, 정재석, 그리고 열정을 공유하는 창의적인 팀원들이 이끌고 있습니다. 연세대학교 어영정 교수님, 위스콘신 대학교 매디슨 캠퍼스의 이용재 교수님, 그리고 여러 창업자 및 투자자들의 지원을 받고 있습니다. 서울에 본사를 두고 있으며, 팀원들은 머신러닝, 소프트웨어, 엔터테인먼트 분야에서 오랜 경력을 쌓아온 전문가들입니다.",
+    'team.description.prefix': "CineLingo는 ",
+    'team.description.mingi': "권민기",
+    'team.description.middle': ", ",
+    'team.description.jaeseok': "정재석",
+    'team.description.suffix': ", 그리고 열정을 공유하는 창의적인 팀원들이 이끌고 있습니다. 연세대학교 어영정 교수님, 위스콘신 대학교 매디슨 캠퍼스의 이용재 교수님, 그리고 여러 창업자 및 투자자들의 지원을 받고 있습니다. 서울에 본사를 두고 있으며, 팀원들은 머신러닝, 소프트웨어, 엔터테인먼트 분야에서 오랜 경력을 쌓아온 전문가들입니다.",
     'team.location': "우리는 서울, 한국에 사무실이 있습니다. 우리 팀원들은 머신러닝, 소프트웨어, 엔터테인먼트 분야에서 오랜 경력을 가지고 있습니다.",
     'team.belief': "우리는 명확한 비전을 가진 작고 집중된 팀이 위대한 결과를 만들어낼 수 있다고 믿습니다.",
     'team.photos.title': "우리 팀",

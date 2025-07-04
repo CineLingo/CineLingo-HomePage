@@ -19,7 +19,25 @@ export default function TeamPage() {
                 {t('team.title')}
               </h1>
               <p className="text-xl md:text-2xl text-gray-600 leading-relaxed">
-                {t('team.description')}
+                {t('team.description.prefix')}
+                <a 
+                  href="https://sites.google.com/view/mingikwon" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-[#5E548E] hover:text-[#231942] underline hover:no-underline transition-colors duration-300"
+                >
+                  {t('team.description.mingi')}
+                </a>
+                {t('team.description.middle')}
+                <a 
+                  href="https://sites.google.com/yonsei.ac.kr/jaeseokjeong" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-[#5E548E] hover:text-[#231942] underline hover:no-underline transition-colors duration-300"
+                >
+                  {t('team.description.jaeseok')}
+                </a>
+                {t('team.description.suffix')}
                 <br/> {t('team.location')}
 
                 <p className="text-xl md:text-2xl text-[#5E548E] font-medium leading-relaxed">
