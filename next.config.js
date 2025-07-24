@@ -5,8 +5,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/cinelingo-landing' : '',
-  basePath: process.env.NODE_ENV === 'production' ? '/cinelingo-landing' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/CineLingo-HomePage' : '',
+  basePath: process.env.NODE_ENV === 'production' ? '/CineLingo-HomePage' : '',
 }
 
 module.exports = nextConfig 
