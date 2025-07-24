@@ -7,6 +7,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isServiceDropdownOpen, setIsServiceDropdownOpen] = useState(false);
   const { t } = useLanguage();
 
   return (
@@ -23,6 +24,39 @@ export default function Header() {
             <Link href="/" className="text-gray-700 hover:text-[#5E548E] transition-colors">
               {t('nav.home')}
             </Link>
+            
+            {/* Service Dropdown */}
+            <div className="relative">
+              <button
+                onClick={() => setIsServiceDropdownOpen(!isServiceDropdownOpen)}
+                onBlur={() => setTimeout(() => setIsServiceDropdownOpen(false), 150)}
+                className="text-gray-700 hover:text-[#5E548E] transition-colors flex items-center gap-1"
+              >
+                {t('nav.service')}
+                <svg 
+                  className={`w-4 h-4 transition-transform ${isServiceDropdownOpen ? 'rotate-180' : ''}`} 
+                  fill="none" 
+                  stroke="currentColor" 
+                  viewBox="0 0 24 24"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              
+              {isServiceDropdownOpen && (
+                <div className="absolute top-full left-0 mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg py-2 z-50">
+                  <a
+                    href="https://myvoice.cinelingo-labs.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-[#5E548E] transition-colors"
+                  >
+                    9 Seconds
+                  </a>
+                </div>
+              )}
+            </div>
+            
             <Link href="/research" className="text-gray-700 hover:text-[#5E548E] transition-colors">
               {t('nav.research')}
             </Link>
@@ -55,6 +89,21 @@ export default function Header() {
               >
                 {t('nav.home')}
               </Link>
+              
+              {/* Mobile Service Section */}
+              <div className="flex flex-col gap-2">
+                <span className="text-gray-700 font-medium">{t('nav.service')}</span>
+                <a
+                  href="https://myvoice.cinelingo-labs.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-600 hover:text-[#5E548E] transition-colors pl-4"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  9 Seconds
+                </a>
+              </div>
+              
               <Link 
                 href="/research" 
                 className="text-gray-700 hover:text-[#5E548E] transition-colors"

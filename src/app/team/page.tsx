@@ -18,7 +18,7 @@ export default function TeamPage() {
               <h1 className="text-4xl md:text-5xl font-bold text-black mb-8 leading-tight">
                 {t('team.title')}
               </h1>
-              <p className="text-xl md:text-2xl text-gray-600 leading-relaxed">
+              <div className="text-xl md:text-2xl text-gray-600 leading-relaxed">
                 {t('team.description.prefix')}
                 <a 
                   href="https://sites.google.com/view/mingikwon" 
@@ -39,10 +39,10 @@ export default function TeamPage() {
                 </a>
                 {t('team.description.suffix')}
                 <br/> {t('team.location')}
-
-                <p className="text-xl md:text-2xl text-[#5E548E] font-medium leading-relaxed">
-                  {t('team.belief')}
-                </p>
+              </div>
+              
+              <p className="text-xl md:text-2xl text-[#5E548E] font-medium leading-relaxed mt-4">
+                {t('team.belief')}
               </p>
             </div>
 
