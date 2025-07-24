@@ -122,11 +122,11 @@ export default function ResearchPage() {
                 </div>
                 
                 <div className="flex gap-6 text-lg">
-                  <a href="#" className="flex items-center gap-2 text-[#BE95C4] hover:text-[#9F86C0] font-medium hover-glow px-4 py-2 rounded-lg transition-all duration-300">
+                  <a href="https://arxiv.org/abs/2507.04349" className="flex items-center gap-2 text-[#BE95C4] hover:text-[#9F86C0] font-medium hover-glow px-4 py-2 rounded-lg transition-all duration-300">
                     <span>📚</span>
                     <span>{t('research.jamflow.arxiv')}</span>
                   </a>
-                  <a href="#" className="flex items-center gap-2 text-[#BE95C4] hover:text-[#9F86C0] font-medium hover-glow px-4 py-2 rounded-lg transition-all duration-300">
+                  <a href="https://curryjung.github.io/ttsctrlnet_project_page/#" className="flex items-center gap-2 text-[#BE95C4] hover:text-[#9F86C0] font-medium hover-glow px-4 py-2 rounded-lg transition-all duration-300">
                     <span>🌐</span>
                     <span>{t('research.jamflow.project')}</span>
                   </a>

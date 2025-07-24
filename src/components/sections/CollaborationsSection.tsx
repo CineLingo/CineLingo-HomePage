@@ -1,6 +1,7 @@
 "use client";
 
 import { useLanguage } from '@/contexts/LanguageContext';
+import Image from 'next/image';
 
 export default function CollaborationsSection() {
   const { t } = useLanguage();
@@ -22,91 +23,115 @@ export default function CollaborationsSection() {
             <div className="flex animate-slide gap-16 items-center">
               {/* Original Logos */}
               <div className="w-40 h-20 relative flex-shrink-0">
-                <img
-                  src="./veritasium_logo.jpg"
+                <Image
+                  src="/veritasium_logo.jpg"
                   alt="Veritasium"
-                  className="w-full h-full object-contain"
+                  fill
+                  className="object-contain"
+                  sizes="(max-width: 768px) 100vw, 160px"
                 />
               </div>
               <div className="w-40 h-20 relative flex-shrink-0">
-                <img
-                  src="./3blue1brown_logo.jpg"
+                <Image
+                  src="/3blue1brown_logo.jpg"
                   alt="3Blue1Brown"
-                  className="w-full h-full object-contain"
+                  fill
+                  className="object-contain"
+                  sizes="(max-width: 768px) 100vw, 160px"
                 />
               </div>
               <div className="w-40 h-20 relative flex-shrink-0">
-                <img
-                  src="./welchlabs_logo.jpeg"
+                <Image
+                  src="/welchlabs_logo.jpeg"
                   alt="Welch Labs"
-                  className="w-full h-full object-contain"
+                  fill
+                  className="object-contain"
+                  sizes="(max-width: 768px) 100vw, 160px"
                 />
               </div>
               <div className="w-40 h-20 relative flex-shrink-0">
-                <img
-                  src="./doctorfriends_logo.jpg"
+                <Image
+                  src="/doctorfriends_logo.jpg"
                   alt="Doctorfriends"
-                  className="w-full h-full object-contain"
+                  fill
+                  className="object-contain"
+                  sizes="(max-width: 768px) 100vw, 160px"
                 />
               </div>
               
               {/* Korean Logos */}
               <div className="w-40 h-20 relative flex-shrink-0">
-                <img
-                  src="./veritasium_ko_logo.jpg"
+                <Image
+                  src="/veritasium_ko_logo.jpg"
                   alt="Veritasium Korea"
-                  className="w-full h-full object-contain"
+                  fill
+                  className="object-contain"
+                  sizes="(max-width: 768px) 100vw, 160px"
                 />
               </div>
               <div className="w-40 h-20 relative flex-shrink-0">
-                <img
-                  src="./3blue1brown_ko_logo.jpg"
+                <Image
+                  src="/3blue1brown_ko_logo.jpg"
                   alt="3Blue1Brown Korea"
-                  className="w-full h-full object-contain"
+                  fill
+                  className="object-contain"
+                  sizes="(max-width: 768px) 100vw, 160px"
                 />
               </div>
               <div className="w-40 h-20 relative flex-shrink-0">
-                <img
-                  src="./welchlabs_korea_logo.png"
+                <Image
+                  src="/welchlabs_korea_logo.png"
                   alt="Welch Labs Korea"
-                  className="w-full h-full object-contain"
+                  fill
+                  className="object-contain"
+                  sizes="(max-width: 768px) 100vw, 160px"
                 />
               </div>
               <div className="w-40 h-20 relative flex-shrink-0">
-                <img
-                  src="./doctorfriends_logo.jpg"
+                <Image
+                  src="/doctorfriends_logo.jpg"
                   alt="Doctorfriends"
-                  className="w-full h-full object-contain"
+                  fill
+                  className="object-contain"
+                  sizes="(max-width: 768px) 100vw, 160px"
                 />
               </div>
               
               {/* Duplicate for seamless loop */}
               <div className="w-40 h-20 relative flex-shrink-0">
-                <img
-                  src="./veritasium_logo.jpg"
+                <Image
+                  src="/veritasium_logo.jpg"
                   alt="Veritasium"
-                  className="w-full h-full object-contain"
+                  fill
+                  className="object-contain"
+                  sizes="(max-width: 768px) 100vw, 160px"
                 />
               </div>
               <div className="w-40 h-20 relative flex-shrink-0">
-                <img
-                  src="./3blue1brown_logo.jpg"
+                <Image
+                  src="/3blue1brown_logo.jpg"
                   alt="3Blue1Brown"
-                  className="w-full h-full object-contain"
+                  fill
+                  className="object-contain"
+                  sizes="(max-width: 768px) 100vw, 160px"
                 />
               </div>
               <div className="w-40 h-20 relative flex-shrink-0">
-                <img
-                  src="./welchlabs_logo.jpeg"
+                <Image
+                  src="/welchlabs_logo.jpeg"
                   alt="Welch Labs"
-                  className="w-full h-full object-contain"
+                  fill
+                  className="object-contain"
+                  sizes="(max-width: 768px) 100vw, 160px"
                 />
               </div>
               <div className="w-40 h-20 relative flex-shrink-0">
-                <img
-                  src="./doctorfriends_logo.jpg"
+                <Image
+                  src="/doctorfriends_logo.jpg"
                   alt="Doctorfriends"
-                  className="w-full h-full object-contain"
+                  fill
+                  className="object-contain"
+                  sizes="(max-width: 768px) 100vw, 160px"
                 />
               </div>
             </div>

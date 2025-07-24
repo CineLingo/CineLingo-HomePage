@@ -3,6 +3,7 @@
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { useLanguage } from "@/contexts/LanguageContext";
+import Image from "next/image";
 
 export default function TeamPage() {
   const { t } = useLanguage();
@@ -53,131 +54,167 @@ export default function TeamPage() {
                 <div className="flex animate-slide gap-8 items-center">
                   {/* First set of photos */}
                   <div className="w-80 h-60 relative flex-shrink-0">
-                    <img
-                      src={process.env.NODE_ENV === 'production' ? '/cinelingo-landing/photo0.jpg' : '/photo0.jpg'}
+                    <Image
+                      src="/photo0.jpg"
                       alt="Team Photo 1"
-                      className="w-full h-full object-cover rounded-lg shadow-lg hover-lift"
+                      fill
+                      className="object-cover rounded-lg shadow-lg hover-lift"
+                      sizes="(max-width: 768px) 100vw, 320px"
                     />
                   </div>
                   <div className="w-80 h-60 relative flex-shrink-0">
-                    <img
-                      src={process.env.NODE_ENV === 'production' ? '/cinelingo-landing/photo1.png' : '/photo1.png'}
+                    <Image
+                      src="/photo1.png"
                       alt="Team Photo 2"
-                      className="w-full h-full object-cover rounded-lg shadow-lg hover-lift"
+                      fill
+                      className="object-cover rounded-lg shadow-lg hover-lift"
+                      sizes="(max-width: 768px) 100vw, 320px"
                     />
                   </div>
                   <div className="w-80 h-60 relative flex-shrink-0">
-                    <img
-                      src={process.env.NODE_ENV === 'production' ? '/cinelingo-landing/photo2.jpg' : '/photo2.jpg'}
+                    <Image
+                      src="/photo2.jpg"
                       alt="Team Photo 3"
-                      className="w-full h-full object-cover rounded-lg shadow-lg hover-lift"
+                      fill
+                      className="object-cover rounded-lg shadow-lg hover-lift"
+                      sizes="(max-width: 768px) 100vw, 320px"
                     />
                   </div>
                   <div className="w-80 h-60 relative flex-shrink-0">
-                    <img
-                      src={process.env.NODE_ENV === 'production' ? '/cinelingo-landing/photo3.png' : '/photo3.png'}
+                    <Image
+                      src="/photo3.png"
                       alt="Team Photo 4"
-                      className="w-full h-full object-cover rounded-lg shadow-lg hover-lift"
+                      fill
+                      className="object-cover rounded-lg shadow-lg hover-lift"
+                      sizes="(max-width: 768px) 100vw, 320px"
                     />
                   </div>
                   <div className="w-80 h-60 relative flex-shrink-0">
-                    <img
-                      src={process.env.NODE_ENV === 'production' ? '/cinelingo-landing/photo4.png' : '/photo4.png'}
+                    <Image
+                      src="/photo4.png"
                       alt="Team Photo 5"
-                      className="w-full h-full object-cover rounded-lg shadow-lg hover-lift"
+                      fill
+                      className="object-cover rounded-lg shadow-lg hover-lift"
+                      sizes="(max-width: 768px) 100vw, 320px"
                     />
                   </div>
                   <div className="w-80 h-60 relative flex-shrink-0">
-                    <img
-                      src={process.env.NODE_ENV === 'production' ? '/cinelingo-landing/photo5.png' : '/photo5.png'}
+                    <Image
+                      src="/photo5.png"
                       alt="Team Photo 6"
-                      className="w-full h-full object-cover rounded-lg shadow-lg hover-lift"
+                      fill
+                      className="object-cover rounded-lg shadow-lg hover-lift"
+                      sizes="(max-width: 768px) 100vw, 320px"
                     />
                   </div>
                   <div className="w-80 h-60 relative flex-shrink-0">
-                    <img
-                      src={process.env.NODE_ENV === 'production' ? '/cinelingo-landing/photo0.jpg' : '/photo0.jpg'}
+                    <Image
+                      src="/photo0.jpg"
                       alt="Team Photo 7"
-                      className="w-full h-full object-cover rounded-lg shadow-lg hover-lift"
+                      fill
+                      className="object-cover rounded-lg shadow-lg hover-lift"
+                      sizes="(max-width: 768px) 100vw, 320px"
                     />
                   </div>
                   <div className="w-80 h-60 relative flex-shrink-0">
-                    <img
-                      src={process.env.NODE_ENV === 'production' ? '/cinelingo-landing/photo1.png' : '/photo1.png'}
+                    <Image
+                      src="/photo1.png"
                       alt="Team Photo 8"
-                      className="w-full h-full object-cover rounded-lg shadow-lg hover-lift"
+                      fill
+                      className="object-cover rounded-lg shadow-lg hover-lift"
+                      sizes="(max-width: 768px) 100vw, 320px"
                     />
                   </div>
                   <div className="w-80 h-60 relative flex-shrink-0">
-                    <img
-                      src={process.env.NODE_ENV === 'production' ? '/cinelingo-landing/photo2.jpg' : '/photo2.jpg'}
+                    <Image
+                      src="/photo2.jpg"
                       alt="Team Photo 9"
-                      className="w-full h-full object-cover rounded-lg shadow-lg hover-lift"
+                      fill
+                      className="object-cover rounded-lg shadow-lg hover-lift"
+                      sizes="(max-width: 768px) 100vw, 320px"
                     />
                   </div>
                   <div className="w-80 h-60 relative flex-shrink-0">
-                    <img
-                      src={process.env.NODE_ENV === 'production' ? '/cinelingo-landing/photo3.png' : '/photo3.png'}
+                    <Image
+                      src="/photo3.png"
                       alt="Team Photo 10"
-                      className="w-full h-full object-cover rounded-lg shadow-lg hover-lift"
+                      fill
+                      className="object-cover rounded-lg shadow-lg hover-lift"
+                      sizes="(max-width: 768px) 100vw, 320px"
                     />
                   </div>
                   <div className="w-80 h-60 relative flex-shrink-0">
-                    <img
-                      src={process.env.NODE_ENV === 'production' ? '/cinelingo-landing/photo4.png' : '/photo4.png'}
+                    <Image
+                      src="/photo4.png"
                       alt="Team Photo 11"
-                      className="w-full h-full object-cover rounded-lg shadow-lg hover-lift"
+                      fill
+                      className="object-cover rounded-lg shadow-lg hover-lift"
+                      sizes="(max-width: 768px) 100vw, 320px"
                     />
                   </div>
                   <div className="w-80 h-60 relative flex-shrink-0">
-                    <img
-                      src={process.env.NODE_ENV === 'production' ? '/cinelingo-landing/photo5.png' : '/photo5.png'}
+                    <Image
+                      src="/photo5.png"
                       alt="Team Photo 12"
-                      className="w-full h-full object-cover rounded-lg shadow-lg hover-lift"
+                      fill
+                      className="object-cover rounded-lg shadow-lg hover-lift"
+                      sizes="(max-width: 768px) 100vw, 320px"
                     />
                   </div>
                   
                   {/* Duplicate set for seamless loop */}
                   <div className="w-80 h-60 relative flex-shrink-0">
-                    <img
-                      src={process.env.NODE_ENV === 'production' ? '/cinelingo-landing/photo0.jpg' : '/photo0.jpg'}
+                    <Image
+                      src="/photo0.jpg"
                       alt="Team Photo 13"
-                      className="w-full h-full object-cover rounded-lg shadow-lg hover-lift"
+                      fill
+                      className="object-cover rounded-lg shadow-lg hover-lift"
+                      sizes="(max-width: 768px) 100vw, 320px"
                     />
                   </div>
                   <div className="w-80 h-60 relative flex-shrink-0">
-                    <img
-                      src={process.env.NODE_ENV === 'production' ? '/cinelingo-landing/photo1.png' : '/photo1.png'}
+                    <Image
+                      src="/photo1.png"
                       alt="Team Photo 14"
-                      className="w-full h-full object-cover rounded-lg shadow-lg hover-lift"
+                      fill
+                      className="object-cover rounded-lg shadow-lg hover-lift"
+                      sizes="(max-width: 768px) 100vw, 320px"
                     />
                   </div>
                   <div className="w-80 h-60 relative flex-shrink-0">
-                    <img
-                      src={process.env.NODE_ENV === 'production' ? '/cinelingo-landing/photo2.jpg' : '/photo2.jpg'}
+                    <Image
+                      src="/photo2.jpg"
                       alt="Team Photo 15"
-                      className="w-full h-full object-cover rounded-lg shadow-lg hover-lift"
+                      fill
+                      className="object-cover rounded-lg shadow-lg hover-lift"
+                      sizes="(max-width: 768px) 100vw, 320px"
                     />
                   </div>
                   <div className="w-80 h-60 relative flex-shrink-0">
-                    <img
-                      src={process.env.NODE_ENV === 'production' ? '/cinelingo-landing/photo3.png' : '/photo3.png'}
+                    <Image
+                      src="/photo3.png"
                       alt="Team Photo 16"
-                      className="w-full h-full object-cover rounded-lg shadow-lg hover-lift"
+                      fill
+                      className="object-cover rounded-lg shadow-lg hover-lift"
+                      sizes="(max-width: 768px) 100vw, 320px"
                     />
                   </div>
                   <div className="w-80 h-60 relative flex-shrink-0">
-                    <img
-                      src={process.env.NODE_ENV === 'production' ? '/cinelingo-landing/photo4.png' : '/photo4.png'}
+                    <Image
+                      src="/photo4.png"
                       alt="Team Photo 17"
-                      className="w-full h-full object-cover rounded-lg shadow-lg hover-lift"
+                      fill
+                      className="object-cover rounded-lg shadow-lg hover-lift"
+                      sizes="(max-width: 768px) 100vw, 320px"
                     />
                   </div>
                   <div className="w-80 h-60 relative flex-shrink-0">
-                    <img
-                      src={process.env.NODE_ENV === 'production' ? '/cinelingo-landing/photo5.png' : '/photo5.png'}
+                    <Image
+                      src="/photo5.png"
                       alt="Team Photo 18"
-                      className="w-full h-full object-cover rounded-lg shadow-lg hover-lift"
+                      fill
+                      className="object-cover rounded-lg shadow-lg hover-lift"
+                      sizes="(max-width: 768px) 100vw, 320px"
                     />
                   </div>
                 </div>
