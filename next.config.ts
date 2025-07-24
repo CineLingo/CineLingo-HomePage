@@ -5,11 +5,10 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: false, // Vercel에서는 최적화된 이미지 사용 가능
   },
-  // GitHub Pages용 설정 제거
-  // output: 'export',
-  // trailingSlash: true,
-  // basePath: process.env.NODE_ENV === 'production' ? '/cinelingo-landing' : '',
-  // assetPrefix: process.env.NODE_ENV === 'production' ? '/cinelingo-landing/' : '',
+  // 환경 변수 설정
+  env: {
+    CUSTOM_KEY: process.env.CUSTOM_KEY,
+  },
 };
 
 export default nextConfig;
