@@ -51,7 +51,7 @@ export default function Header() {
                     rel="noopener noreferrer"
                     className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-[#5E548E] transition-colors"
                   >
-                    9 Seconds
+                    Lingo Voice
                   </a>
                 </div>
               )}
@@ -100,7 +100,7 @@ export default function Header() {
                   className="text-gray-600 hover:text-[#5E548E] transition-colors pl-4"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  9 Seconds
+                  Lingo Voice
                 </a>
               </div>
               

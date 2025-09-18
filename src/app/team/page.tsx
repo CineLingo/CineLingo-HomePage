@@ -47,12 +47,11 @@ export default function TeamPage() {
               </p>
             </div>
 
-            {/* Team Photos Slider */}
+            {/* Team Photos with Scrollbar */}
             <div className="mb-16">
               <h2 className="text-2xl md:text-3xl font-bold text-black mb-8 text-center">{t('team.photos.title')}</h2>
-              <div className="overflow-hidden">
-                <div className="flex animate-slide gap-8 items-center">
-                  {/* First set of photos */}
+              <div className="overflow-x-auto scrollbar-custom">
+                <div className="flex gap-8 items-center pb-4" style={{ width: 'max-content' }}>
                   <div className="w-80 h-60 relative flex-shrink-0">
                     <Image
                       src="/photo0.jpg"
@@ -109,7 +108,7 @@ export default function TeamPage() {
                   </div>
                   <div className="w-80 h-60 relative flex-shrink-0">
                     <Image
-                      src="/photo0.jpg"
+                      src="/photo6.jpg"
                       alt="Team Photo 7"
                       fill
                       className="object-cover rounded-lg shadow-lg hover-lift"
@@ -118,7 +117,7 @@ export default function TeamPage() {
                   </div>
                   <div className="w-80 h-60 relative flex-shrink-0">
                     <Image
-                      src="/photo1.png"
+                      src="/photo7.jpg"
                       alt="Team Photo 8"
                       fill
                       className="object-cover rounded-lg shadow-lg hover-lift"
@@ -127,105 +126,22 @@ export default function TeamPage() {
                   </div>
                   <div className="w-80 h-60 relative flex-shrink-0">
                     <Image
-                      src="/photo2.jpg"
+                      src="/photo8.jpg"
                       alt="Team Photo 9"
                       fill
                       className="object-cover rounded-lg shadow-lg hover-lift"
                       sizes="(max-width: 768px) 100vw, 320px"
                     />
-                  </div>
-                  <div className="w-80 h-60 relative flex-shrink-0">
-                    <Image
-                      src="/photo3.png"
-                      alt="Team Photo 10"
-                      fill
-                      className="object-cover rounded-lg shadow-lg hover-lift"
-                      sizes="(max-width: 768px) 100vw, 320px"
-                    />
-                  </div>
-                  <div className="w-80 h-60 relative flex-shrink-0">
-                    <Image
-                      src="/photo4.png"
-                      alt="Team Photo 11"
-                      fill
-                      className="object-cover rounded-lg shadow-lg hover-lift"
-                      sizes="(max-width: 768px) 100vw, 320px"
-                    />
-                  </div>
-                  <div className="w-80 h-60 relative flex-shrink-0">
-                    <Image
-                      src="/photo5.png"
-                      alt="Team Photo 12"
-                      fill
-                      className="object-cover rounded-lg shadow-lg hover-lift"
-                      sizes="(max-width: 768px) 100vw, 320px"
-                    />
-                  </div>
-                  
-                  {/* Duplicate set for seamless loop */}
-                  <div className="w-80 h-60 relative flex-shrink-0">
-                    <Image
-                      src="/photo0.jpg"
-                      alt="Team Photo 13"
-                      fill
-                      className="object-cover rounded-lg shadow-lg hover-lift"
-                      sizes="(max-width: 768px) 100vw, 320px"
-                    />
-                  </div>
-                  <div className="w-80 h-60 relative flex-shrink-0">
-                    <Image
-                      src="/photo1.png"
-                      alt="Team Photo 14"
-                      fill
-                      className="object-cover rounded-lg shadow-lg hover-lift"
-                      sizes="(max-width: 768px) 100vw, 320px"
-                    />
-                  </div>
-                  <div className="w-80 h-60 relative flex-shrink-0">
-                    <Image
-                      src="/photo2.jpg"
-                      alt="Team Photo 15"
-                      fill
-                      className="object-cover rounded-lg shadow-lg hover-lift"
-                      sizes="(max-width: 768px) 100vw, 320px"
-                    />
-                  </div>
-                  <div className="w-80 h-60 relative flex-shrink-0">
-                    <Image
-                      src="/photo3.png"
-                      alt="Team Photo 16"
-                      fill
-                      className="object-cover rounded-lg shadow-lg hover-lift"
-                      sizes="(max-width: 768px) 100vw, 320px"
-                    />
-                  </div>
-                  <div className="w-80 h-60 relative flex-shrink-0">
-                    <Image
-                      src="/photo4.png"
-                      alt="Team Photo 17"
-                      fill
-                      className="object-cover rounded-lg shadow-lg hover-lift"
-                      sizes="(max-width: 768px) 100vw, 320px"
-                    />
-                  </div>
-                  <div className="w-80 h-60 relative flex-shrink-0">
-                    <Image
-                      src="/photo5.png"
-                      alt="Team Photo 18"
-                      fill
-                      className="object-cover rounded-lg shadow-lg hover-lift"
-                      sizes="(max-width: 768px) 100vw, 320px"
-                    />
-                  </div>
+                  </div>                  
                 </div>
               </div>
               
-              {/* Photo counter */}
+              {/* Photo info */}
               <div className="text-center mt-8">
                 <div className="inline-flex items-center gap-4 text-gray-600">
-                  <div className="w-2 h-2 bg-[#5E548E] rounded-full animate-pulse-slow"></div>
+                  <div className="w-2 h-2 bg-[#5E548E] rounded-full"></div>
                   <span className="text-lg">{t('team.photos.scroll')}</span>
-                  <div className="w-2 h-2 bg-[#5E548E] rounded-full animate-pulse-slow" style={{ animationDelay: '0.5s' }}></div>
+                  <div className="w-2 h-2 bg-[#5E548E] rounded-full"></div>
                 </div>
               </div>
             </div>

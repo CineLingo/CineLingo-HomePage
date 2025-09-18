@@ -59,6 +59,31 @@ body {
   background: #a8a8a8;
 }
 
+/* Custom scrollbar for team photos */
+.scrollbar-custom {
+  scrollbar-width: thin;
+  scrollbar-color: #5E548E #f1f1f1;
+}
+
+.scrollbar-custom::-webkit-scrollbar {
+  height: 8px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  background: #5E548E;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb:hover {
+  background: #231942;
+}
+
 /* Logo slider animation */
 @keyframes slide {
   0% {
